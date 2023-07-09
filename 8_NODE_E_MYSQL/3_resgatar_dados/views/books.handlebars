@@ -1,0 +1,8 @@
+<h1>Livros Cadastrados:</h1>
+<hr>
+<div>
+  {{#each books}}
+  <span>#{{this.id}} - Título: {{this.title}} | Páginas: {{this.pageqty}}</span><br>
+  <hr>
+  {{/each}}
+</div>

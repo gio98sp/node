@@ -1,0 +1,6 @@
+<h1>Usuário</h1>
+<div>
+  {{#each users}}
+  <span>{{this.name}} - {{this.occupation}}</span><a href="/users/{{this.id}}">Ver detalhes</a><br><hr>
+  {{/each}}
+</div>

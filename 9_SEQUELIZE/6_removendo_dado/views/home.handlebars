@@ -1,0 +1,7 @@
+<h1>Usuários</h1>
+<div>
+  {{#each users}}
+  <span>Usuário: {{this.name}} - Profissão: {{this.occupation}}</span>
+  <form action="/{{this.id}}" method="post"><input type="submit" value="Excluir"></form><br><hr>
+  {{/each}}
+</div>

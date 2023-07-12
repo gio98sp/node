@@ -1,0 +1,7 @@
+<h1>Usuários</h1>
+<div>
+  {{#each users}}
+  <span>User: {{this.name}} - Profissão: {{this.occupation}}</span>
+  <a href="/{{this.id}}">Ver detalhes</a></form><hr>
+  {{/each}}
+</div>

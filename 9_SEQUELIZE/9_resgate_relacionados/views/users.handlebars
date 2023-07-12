@@ -1,0 +1,10 @@
+<h1>Usuários</h1>
+<div>
+  {{#each users.users}}
+  <span>ID <strong>#{{this.id}}</strong> - User: <strong>{{this.name}}</strong> - Profissão: <strong>{{this.occupation}}</strong></span><br>
+  {{/each}}
+  {{#each users.adresses}}
+  <span>Rua: {{this.street}} - Number: {{this.number}} - Cidade: {{this.city}}</span><br>
+  <a href="/users/{{this.id}}/edit">Editar</a><a href="/users/{{this.id}}/delete">Excluir</a><br><hr>
+  {{/each}}
+</div>
